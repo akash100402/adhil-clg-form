@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <!-- Include Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+ label{
+    font-size: 17px;
+    margin-bottom: 8px;
+ }
+ input{
+    margin-bottom: 22px;
+ }
+ select{
+    margin-bottom: 22px;
+ }
+</style>
+</head>
+<body class="">
+  <div class="text-center">
+    <h2 class="text-4xl text-blue-800 font-bold mb-2">SRI BALAJI ARTS & SCIENCE</h2>
+    <h3 class="text-3xl text-blue-800 font-bold mb-4">(CO - EDUCATION) COLLEGE</h3>
+    <p class="text-xl text-blue-800 mb-2 ">Kolappakkam, Vandalur, Chennai - 600 127.</p>
+    <hr>
+    <p class="text-xl text-blue-800 mb-4">Approved by Govt. of Tamilnadu and Affiliated to University of Madras</p>
+  <p class="p-4 border-2 border-gray-300 mx-auto text-xl text-red-800 mb-4">APPLICATION FORM FOR ADMISSION TO THE UG DEGREE COURSES</p>
+  </div>
+  <div class="container mx-auto p-4 ">
+    
+
+
+      
+   
+    <form class="max-w-xl mx-auto">
+      <!-- Student Name -->
+      <div class="mb-4">
+        <label for="name" class="block mb-2">Student Name:</label>
+        <input type="text" name="name" id="sName" class="border p-2 rounded w-full">
+        <label for="name" class="block mb-2">Student Name:</label>
+        <input type="file" name="sphoto" id="sphoto">
+      </div>
+      
+      <!-- Father's Name -->
+      <div class="mb-4">
+        <label for="fname" class="block mb-2">Father's Name:</label>
+        <input type="text" name="fname" id="fName" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Address -->
+      <div class="mb-4">
+        <label for="address" class="block mb-2">Address:</label>
+        <div class="grid grid-cols-2 gap-2">
+          <input type="text" name="door" id="door" placeholder="Door No." class="border p-2 rounded w-full">
+          <input type="text" name="town" id="town" placeholder="Town"  class="border p-2 rounded w-full">
+          <input type="text" name="district" id="district" placeholder="District"  class="border p-2 rounded w-full">
+          <input type="text" name="state" id="state" placeholder="State"  class="border p-2 rounded w-full">
+          <input type="text" name="pincode" id="pincode" placeholder="Pin Code"  class="border p-2 rounded w-full">
+          <input type="text" name="phone" id="phone" placeholder="Phone"  class="border p-2 rounded w-full">
+          <input type="text" name="email" id="email" placeholder="Email"  class="border p-2 rounded w-full">
+        </div>
+      </div>
+      
+      <!-- Gender -->
+      <div class="mb-4">
+        <label for="gender" class="block mb-2">Gender:</label>
+        <select name="gender" id="gender" class="border p-2 rounded w-full">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="trans">Trans Gender</option>
+        </select>
+      </div>
+      
+      <!-- Date of Birth -->
+      <div class="mb-4">
+        <label for="dob" class="block mb-2">Date Of Birth:</label>
+        <input type="date" name="dob" id="dob" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Adhar Card Number -->
+      <div class="mb-4">
+        <label for="adhar" class="block mb-2">Adhar Card Number:</label>
+        <input type="text" name="adhar" id="adhar" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Native State -->
+      <div class="mb-4">
+        <label for="nstate" class="block mb-2">Native State:</label>
+        <input type="text" name="nstate" id="nstate" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Physically Disabled -->
+      <div class="mb-4">
+        <label for="phyic" class="block mb-2">Physically Disabled:</label>
+        <div class="flex">
+          <input type="radio" name="phyic" id="phyic" class="mr-2">
+          <label for="phyic" class="mr-4">Yes</label>
+          <input type="radio" name="phyic" id="phyic" class="mr-2">
+          <label for="phyic">No</label>
+        </div>
+      </div>
+      
+      <!-- Citizenship -->
+      <div class="mb-4">
+        <label for="citizen" class="block mb-2">Are you a citizen of India?:</label>
+        <div class="flex">
+          <input type="radio" name="citizen" id="citizen" class="mr-2">
+          <label for="citizen" class="mr-4">Yes</label>
+          <input type="radio" name="citizen" id="citizen" class="mr-2">
+          <label for="citizen">No</label>
+        </div>
+      </div>
+      
+      <!-- If no, Country Name -->
+      <div class="mb-4">
+        <label for="country" class="block mb-2">If no Country Name:</label>
+        <input type="text" name="country" id="country" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Religion -->
+      <div class="mb-4">
+        <label for="religion" class="block mb-2">Religion:</label>
+        <input type="text" name="religion" id="religion" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Community -->
+      <div class="mb-4">
+        <label for="community" class="block mb-2">Community:</label>
+        <input type="text" name="community" id="community" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Caste -->
+      <div class="mb-4">
+        <label for="caste" class="block mb-2">Caste:</label>
+        <input type="text" name="caste" id="caste" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Community Particular -->
+      <div class="mb-4">
+        <label for="commu-part" class="block mb-2">Particular:</label>
+        <select name="commu-part" id="commu-part" class="border p-2 rounded w-full">
+          <option value="oc">OC</option>
+          <option value="bc">BC</option>
+          <option value="bcm">BCM</option>
+          <option value="mbc">MBC</option>
+          <option value="sc">SC</option>
+          <option value="sca">SCA</option>
+          <option value="st">ST</option>
+        </select>
+      </div>
+      
+   
+      
+      <!-- Community Certificate Issued -->
+      <div class="mb-4 flex gap-2">
+        <label for="community-no" class="block mb-2">Community Certificate Number:</label>
+        <input type="text" name="community-no" id="community-no" class="border p-2 rounded w-full">
+        <label for="community-date" class="block mb-2">Community Certificate Issued:</label>
+        <input type="date" name="community-date" id="community-date" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Mother Tongue -->
+      <div class="mb-4">
+        <label for="mother-tongue" class="block mb-2">Mother Tongue:</label>
+        <input type="text" name="mother-tongue" id="mother-tongue" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Occupation of the Parent -->
+      <div class="mb-4">
+        <label for="occupation" class="block mb-2">Occupation of the Parent:</label>
+        <input type="text" name="occupation" id="occupation" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Monthly Income -->
+      <div class="mb-4">
+        <label for="income" class="block mb-2">Monthly Income:</label>
+        <input type="text" name="income" id="income" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- State -->
+      <div class="mb-4">
+        <label for="state" class="block mb-2">State:</label>
+        <select name="state" id="state" class="border p-2 rounded w-full">
+          <option value="tn">Tamil Nadu</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      
+      <!-- UG Course -->
+      <div class="mb-4">
+        <label for="ug-course" class="block mb-2">UG Course:</label>
+        <select name="ug-course" id="ug-course" class="border p-2 rounded w-full">
+          <option value="eng">B.A (English)</option>
+          <option value="cs">B.Sc., (Computer Science)</option>
+          <option value="math">B.Sc., (Mathematics)</option>
+          <option value="com">B.Com (General)</option>
+        </select>
+      </div>
+      
+      <!-- Extra Curricular Activities -->
+      <div class="mb-4">
+        <label for="extra" class="block mb-2">Extra Curricular Activities:</label>
+        <div class="flex">
+          <input type="checkbox" name="extra" id="extra" class="mr-2">
+          <label for="extra" class="mr-4">Games</label>
+          <input type="checkbox" name="extra" id="extra" class="mr-2">
+          <label for="extra" class="mr-4">Sports</label>
+          <input type="checkbox" name="extra" id="extra" class="mr-2">
+          <label for="extra" class="mr-4">N.C.C</label>
+          <input type="checkbox" name="extra" id="extra" class="mr-2">
+          <label for="extra" class="mr-4">Social Activity</label>
+          <input type="checkbox" name="extra" id="extra">
+          <label for="extra">Others</label>
+        </div>
+      </div>
+      
+      <!-- Qualification -->
+      <div class="mb-4">
+        <label for="qualify" class="block mb-2">Qualification:</label>
+        <select name="qualify" id="qualify" class="border p-2 rounded w-full">
+          <option value="hsc-academic">HSC(Academic)</option>
+          <option value="hsc-vocational">HSC(Vocational)</option>
+          <option value="ssc-cbse">SSC(CBSE)</option>
+          <option value="isc-diploma">ISC Diploma</option>
+        </select>
+      </div>
+      
+      <!-- Medium of Instruction -->
+      <div class="mb-4">
+        <label for="medium" class="block mb-2">Medium of Instruction:</label>
+        <div class="flex">
+          <input type="radio" name="medium" id="medium" class="mr-2">
+          <label for="medium" class="mr-4">Tamil</label>
+          <input type="radio" name="medium" id="medium" class="mr-2">
+          <label for="medium" class="mr-4">English</label>
+          <input type="radio" name="medium" id="medium">
+          <label for="medium">Others</label>
+        </div>
+      </div>
+      
+      <!-- Details of Qualifying Examination/ Board/ University -->
+      <div class="mb-4">
+        <label for="detail" class="block mb-2">Details of Qualifying Examination/ Board/ University:</label>
+        <textarea name="detail" id="detail" class="border p-2 rounded w-full" cols="40" rows="5"></textarea>
+      </div>
+      
+      <!-- Regn.No. and Year of Passing -->
+      <div class="mb-4 flex gap-2">
+       <div> <label for="rno" class=" mb-2">Regn.No.</label>
+        <input type="text" name="rno" id="rno" class="border p-2 rounded"></div>
+        <div>
+            <label for="yop" class=" mb-2">Year of Passing</label>
+        <input type="text" name="yop" id="yop" class="border p-2 rounded">
+        </div>
+      </div>
+      
+      <!-- Name of the School Last Attended -->
+      <div class="mb-4">
+        <label for="school-name" class="block mb-2">Name of the School Last Attended:</label>
+        <input type="text" name="school-name" id="school-name" class="border p-2 rounded w-full">
+      </div>
+      
+      <!-- Address of the School -->
+      <div class="mb-4">
+        <label for="s-add" class="block mb-2">Address of the School:</label>
+        <textarea name="s-add" id="s-add" class="border p-2 rounded w-full" cols="40" rows="5"></textarea>
+      </div>
+      
+      <!-- No. of appearances in the qualifying exam -->
+      <div class="mb-4">
+        <label for="attempt" class="block mb-2">No. of appearances in the qualifying exam:</label>
+        <div class="flex">
+          <input type="radio" name="attempt" id="attempt" class="mr-2">
+          <label for="attempt" class="mr-4">One</label>
+          <input type="radio" name="attempt" id="attempt" class="mr-2">
+          <label for="attempt" class="mr-4">Two</label>
+          <input type="radio" name="attempt" id="attempt">
+          <label for="attempt">More than two</label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2 text-2xl text-red-600">HSC (Academic Stream / Equivalent)</label>
+        <table class="border-collapse w-full">
+          <tr>
+            
+            <th class="border p-2">Name of Subject</th>
+            <th class="border p-2">Marks Obtained</th>
+            <th class="border p-2">Percentage</th>
+            <th class="border p-2">Month / Year</th>
+          </tr>
+          <tr>
+            <th class="border p-2">Part - I</th>
+            <td class="border p-2"><input type="number" name="subject1" id="subject1" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject2" id="subject2" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject3" id="subject3" class="border p-2 w-full"></td>
+          </tr>
+          <tr>
+            <th class="border p-2">Part - I</th>
+            <td class="border p-2"><input type="number" name="subject4" id="subject4" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject5" id="subject5" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject6" id="subject6" class="border p-2 w-full"></td>
+          </tr>
+          <tr>
+            <th class="border p-2">Part - II English</th>
+            <td class="border p-2"><input type="number" name="subject7" id="subject7" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject8" id="subject8" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject9" id="subject9" class="border p-2 w-full"></td>
+          </tr>
+           <tr>
+            <th class="border p-2">1.</th>
+            <td class="border p-2"><input type="number" name="subject7" id="subject7" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject8" id="subject8" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject9" id="subject9" class="border p-2 w-full"></td>
+          </tr>
+          <tr>
+            <th class="border p-2">2.</th>
+            <td class="border p-2"><input type="number" name="subject7" id="subject7" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject8" id="subject8" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject9" id="subject9" class="border p-2 w-full"></td>
+          </tr>
+          <tr>
+            <th class="border p-2">3.</th>
+            <td class="border p-2"><input type="number" name="subject7" id="subject7" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject8" id="subject8" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject9" id="subject9" class="border p-2 w-full"></td>
+          </tr>
+          <tr>
+            <th class="border p-2">4.</th>
+            <td class="border p-2"><input type="number" name="subject7" id="subject7" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject8" id="subject8" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject9" id="subject9" class="border p-2 w-full"></td>
+          </tr>
+          <tr>
+            <th class="border p-2">Total Marks</th>
+            <td class="border p-2"><input type="number" name="subject7" id="subject7" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject8" id="subject8" class="border p-2 w-full"></td>
+            <td class="border p-2"><input type="number" name="subject9" id="subject9" class="border p-2 w-full"></td>
+          </tr>
+        </table>
+      </div>
+      
+      <!-- Submit button -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
